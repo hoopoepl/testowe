@@ -1,0 +1,54 @@
+@mixin globalny-styl-1 {
+	background: #f1f1f1;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+@mixin pomachaj {
+
+	transform: rotate(20deg);
+}
+
+$tytul: 30px;
+$bialy: #fff;
+$czarny: #000;
+$troche-szybko: linear 0.5s;
+$troche-wolno: linear 1.5s;
+
+
+body {
+	@include globalny-styl-1;
+}
+
+
+.klasatestowa {
+	
+	position: absolute;
+	width: 300px;
+	margin-left: 50%;
+	left: -150px;
+	top: 125px;
+	border: 5px rgba(0,0,0,0.3) solid;
+	background: rgba(255,255,255,0.4);
+	
+		p {
+			color: $bialy;
+			background: $czarny;
+			font-size: $tytul;
+			transition: $troche-wolno;
+	
+			&:hover {
+					color: #444;
+					font-size: 60px;
+					transition: $troche-szybko;
+					background: red;
+					cursor: pointer;
+					@include pomachaj;
+			}
+		}
+}
+
+
+
