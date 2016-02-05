@@ -2,8 +2,6 @@
 @import "animations.scss", "mixin.scss";
 
 
-
-
 $bulbulator-czas: 2s;
 $bulbulator-ilosc-potworzen: 2;
 
@@ -18,15 +16,11 @@ $zielony: #98ca4a;
 $troche-szybko: linear 0.5s;
 $troche-wolno: linear 1.5s;
 
-
-
-
  
 body {
 	@include globalny-styl-1;
 	background: url('../img/bg.png') repeat fixed;
 	
-		
 }
 
 
