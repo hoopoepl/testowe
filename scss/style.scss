@@ -16,12 +16,18 @@ $zielony: #98ca4a;
 $troche-szybko: linear 0.5s;
 $troche-wolno: linear 1.5s;
 
+
+$rwd-desktop: "only screen and (min-width: 769px)";
+$rwd-mobile: "only screen and (max-width: 768px)";
+
  
 body {
 	@include globalny-styl-1;
 	background: url('../img/bg.png') repeat fixed;
 	
 }
+
+
 
 
 .klasatestowa {
