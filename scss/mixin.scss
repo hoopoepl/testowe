@@ -1,9 +1,12 @@
 @mixin globalny-styl-1 {
-	background: #f1f1f1;
+	background: #000;
 	margin: 0;
 	width: 100%;
 	height: 100%;
 	text-align: center;
+  padding: 0;
+  background: url('../img/bg.png') repeat fixed;
+  overflow: hidden;
 }
 
 @mixin bulbulator {
